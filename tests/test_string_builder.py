@@ -1,13 +1,15 @@
 from lib.string_builder import *
 
-def string_test_add():
+def test_string_test_empty():
     builder = StringBuilder()
-    builder.add("Hi, how are you?")
-    result = builder.size()
-    assert result == 16
+    assert builder.output() == ""
 
-def string_test_return():
+def test_string_test_add():
     builder = StringBuilder()
     builder.add("Hi, how are you?")
-    result = builder.output()
-    assert result == "Hi, how are you?"
+    assert builder.size() == 16
+
+def test_string_test_return():
+    builder = StringBuilder()
+    builder.add("apple, banana, cantaloupe, dragon fruit")
+    assert builder.output() == "apple, banana, cantaloupe, dragon fruit"

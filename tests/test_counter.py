@@ -6,7 +6,7 @@ def test_adding_to_counter():
     result = counter.report()
     assert result == "Counted to 5 so far."
 
-def test_adding_to_counter_again():
+def test_adding_multiple_numbers_to_counter():
     counter = Counter()
     counter.add(20)
     counter.add(10)

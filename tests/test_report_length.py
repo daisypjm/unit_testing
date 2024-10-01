@@ -4,7 +4,7 @@ def test_length_as_simple_string():
     result = report_length("howdy")
     assert result == "This string was 5 characters long."
 
-def test_length_as_int():
+def test_length_as_num_string():
     result = report_length("123456789")
     assert result == "This string was 9 characters long."
 
