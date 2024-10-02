@@ -6,5 +6,5 @@ class PasswordChecker:
             raise Exception("Invalid password, must be 8+ characters.")
         
 
-password = PasswordChecker()
-print(password.check("!@£$%^&*"))
+#password = PasswordChecker()
+#print(password.check("!@£$%^&*"))
